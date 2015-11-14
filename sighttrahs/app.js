@@ -1,0 +1,52 @@
+// function movething() {
+//     document.getElementById("movable").style.animation = "mynewmove .5s 1";
+// }
+$(document).ready(function(){
+	$("#div1").hide();
+	$("#div2").hide();
+    $("#div3").hide();
+    $("#div4").hide();
+    $("#div5").hide();
+    $("#div6").hide();
+    $("#parent").hide();
+    $("#parent2").hide();
+    $("#toTop").click(function(){
+        $("#div6").hide();
+    });
+    $("#Button1").click(function(){
+        $("#parent1").show();
+        $("#div1").fadeToggle();
+        $("#div2").hide();
+        $("#div3").hide();
+        $("#div4").hide();
+        $("#div5").hide();
+    });
+    $("#Button2").click(function(){
+        $("#parent1").show();
+        $("#div2").fadeToggle();
+    	$("#div1").hide();
+        $("#div3").hide();
+        $("#div4").hide();
+        $("#div5").hide();
+    });
+    $("#Button4").click(function(){
+        $("#parent1").show();
+        $("#div4").fadeToggle();
+        $("#div1").hide();
+        $("#div2").hide();
+        $("#div3").hide();
+        $("#div5").hide();
+    });
+    $("#Button5").click(function(){
+        $("#parent1").show();
+        $("#div5").fadeToggle();
+        $("#div1").hide();
+        $("#div2").hide();
+        $("#div3").hide();
+        $("#div2").hide();
+    });
+    $("#Button6").click(function(){
+        $("#parent2").show();
+        $("#div6").fadeToggle();
+    });
+});
