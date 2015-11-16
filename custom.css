@@ -139,6 +139,17 @@ a:link, a:visited, a:hover, a:active{
   color: #999999;
 }
 
+#toTop14 {
+  font-family: 'Cinzel Decorative';
+  font-weight: 900;
+  font-size: 40pt;
+  color: #3B3B3B;
+}
+
+#toTop14:hover {
+  color: #999999;
+}
+
 #toTop21 {
   font-family: 'Cinzel Decorative';
   font-weight: 900;

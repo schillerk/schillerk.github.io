@@ -124,8 +124,6 @@ $(document).ready(function(){
 
     });
 
-
-
 	$("#div1").hide();
 	$("#div2").hide();
     $("#div3").hide();
@@ -135,6 +133,9 @@ $(document).ready(function(){
     $("#div12").hide();
     $("#div13").hide();
     $("#div21").hide();
+    $("#div31").hide();
+    $("#div32").hide();
+    $("#div33").hide();
     $("#parent").hide();
     $("#parent2").hide();
     $("#toTop11").click(function(){
@@ -149,6 +150,15 @@ $(document).ready(function(){
     $("#toTop21").click(function(){
         $("#div21").hide();
     });
+    $("#toTop31").click(function(){
+        $("#div31").hide();
+    });
+    $("#toTop32").click(function(){
+        $("#div32").hide();
+    });
+    $("#toTop33").click(function(){
+        $("#div33").hide();
+    });
     $("#Button1").click(function(){
         $("#parent1").show();
         $("#div1").show();
@@ -161,6 +171,9 @@ $(document).ready(function(){
         $("#div13").hide();
         $("#div14").hide();
         $("#div21").hide();
+        $("#div31").hide();
+        $("#div32").hide();
+        $("#div33").hide();
     });
     $("#Button2").click(function(){
         $("#parent1").show();
@@ -174,6 +187,9 @@ $(document).ready(function(){
         $("#div13").hide();
         $("#div14").hide();
         $("#div21").hide();
+        $("#div31").hide();
+        $("#div32").hide();
+        $("#div33").hide();
     });
     $("#Button4").click(function(){
         $("#parent1").show();
@@ -187,6 +203,9 @@ $(document).ready(function(){
         $("#div13").hide();
         $("#div14").hide();
         $("#div21").hide();
+        $("#div31").hide();
+        $("#div32").hide();
+        $("#div33").hide();
     });
     $("#Button5").click(function(){
         $("#parent1").show();
@@ -200,6 +219,9 @@ $(document).ready(function(){
         $("#div13").hide();
         $("#div14").hide();
         $("#div21").hide();
+        $("#div31").hide();
+        $("#div32").hide();
+        $("#div33").hide();
     });
     $("#Button11").click(function(){
         $("#parent2").show();
@@ -232,5 +254,23 @@ $(document).ready(function(){
     $("#Button21").click(function(){
         $("#parent2").show();
         $("#div21").show();
+    });
+    $("#Button31").click(function(){
+        $("#parent2").show();
+        $("#div31").show();
+        $("#div32").hide();
+        $("#div33").hide();
+    });
+    $("#Button32").click(function(){
+        $("#parent2").show();
+        $("#div32").show();
+        $("#div31").hide();
+        $("#div33").hide();
+    });
+    $("#Button31").click(function(){
+        $("#parent2").show();
+        $("#div33").show();
+        $("#div31").hide();
+        $("#div33").hide();
     });
 });
