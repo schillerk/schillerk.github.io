@@ -161,6 +161,39 @@ a:link, a:visited, a:hover, a:active{
   color: #999999;
 }
 
+#toTop22 {
+  font-family: 'Cinzel Decorative';
+  font-weight: 900;
+  font-size: 40pt;
+  color: #3B3B3B;
+}
+
+#toTop22:hover {
+  color: #999999;
+}
+
+#toTop23 {
+  font-family: 'Cinzel Decorative';
+  font-weight: 900;
+  font-size: 40pt;
+  color: #3B3B3B;
+}
+
+#toTop23:hover {
+  color: #999999;
+}
+
+#toTop24 {
+  font-family: 'Cinzel Decorative';
+  font-weight: 900;
+  font-size: 40pt;
+  color: #3B3B3B;
+}
+
+#toTop24:hover {
+  color: #999999;
+}
+
 #toTop31 {
   font-family: 'Cinzel Decorative';
   font-weight: 900;
@@ -297,9 +330,9 @@ body, html {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  transition: all .25s;
 }
 
 .menu:hover {
@@ -316,9 +349,7 @@ body, html {
   border: none;
   outline-style: medium none !important;
   color: #999999;
-  padding: 8px;
-  padding-left: -140px;
-  padding-right: 14px;
+  padding-top: 8px;
   background-color: white;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
