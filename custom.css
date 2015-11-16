@@ -161,6 +161,39 @@ a:link, a:visited, a:hover, a:active{
   color: #999999;
 }
 
+#toTop31 {
+  font-family: 'Cinzel Decorative';
+  font-weight: 900;
+  font-size: 40pt;
+  color: #3B3B3B;
+}
+
+#toTop31:hover {
+  color: #999999;
+}
+
+#toTop32 {
+  font-family: 'Cinzel Decorative';
+  font-weight: 900;
+  font-size: 40pt;
+  color: #3B3B3B;
+}
+
+#toTop32:hover {
+  color: #999999;
+}
+
+#toTop33 {
+  font-family: 'Cinzel Decorative';
+  font-weight: 900;
+  font-size: 40pt;
+  color: #3B3B3B;
+}
+
+#toTop33:hover {
+  color: #999999;
+}
+
 .blogTitle {
     font-family: 'Open Sans Condensed';
     font-weight: 400;
