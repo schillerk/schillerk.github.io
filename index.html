@@ -92,6 +92,8 @@
             <div class="blogDes">a generalized solution with least residues</div>
             <div id="Button24"><a href="#contact2" class="smoothScroll"><div class="blogTitle">Two-Dimensional Sieve of Eratosthenes</div>  </a></div>
             <div class="blogDes">fun with parabolic structures</div>
+            <div id="Button25"><a href="#contact2" class="smoothScroll"><div class="blogTitle">primeSort</div>  </a></div>
+            <div class="blogDes">fun with the fundamental theorem of arithmetic</div>
           </div>
         </div>
       </div>
@@ -353,7 +355,6 @@ The code for this is all pretty simple. I started out using a simple recursive f
 When I wanted to scale up with higher mods and a bigger triangle, I changed to dynamic programming. The difference is run time is incredible. Recursion forces us to recalculate huge chunks of the triangle every time we add a new element, with dynamic programming, nothing is ever recalculated. Here's the new algorithm:
 <p></p>
 <script src="https://gist.github.com/schillerk/ff671af899fc6c178d0e.js"></script>
-<p></p>
 Using dynamic programming, we can quickly generate use triangles that break the limit on int. And long.
 <p></p>
 <img src="brokenLong.png" style="width: 80%">
@@ -407,7 +408,7 @@ Full program can be found <u><a href="https://gist.github.com/schillerk/fb719b28
       </div>
     </div>
 
-        <div style="display: none;" id="div24">
+    <div style="display: none;" id="div24">
       <div class="column">
         <div class="container">
           <div class="blog">
@@ -444,6 +445,45 @@ Remembering that the vertices of Type 1 laid were situated at points (m^2,m), it
 The code runs with a bit of help from Processing's point() method and is short enough to be reproduced here in full.
 <p></p>
 <script src="https://gist.github.com/schillerk/ef9d74109348da335b62.js"></script>           
+            </div>
+            <a href="#contact" class="smoothScroll"><div id="toTop24">^</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none;" id="div25">
+      <div class="column">
+        <div class="container">
+          <div class="blog">
+            <div class="blogTitle">primeSort</div>
+            <div class="blogContent">
+<p></p>
+A few weeks ago, I was prepping for coding interviews and discovered countingSort. Unlike comparison sorts which are mathematically proven to have a lower bound of O(n*log(n)) time, countingSort is able to run in O(n) time using a frequency array and two linear passes. You can read more about it <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/video-lectures/lecture-5-linear-time-sorting-lower-bounds-counting-sort-radix-sort/lec5.pdf"><u>here</u></a>.
+<p></p>
+As you might guess, there’s a reason countingSort isn’t usually taught in schools or implemented in real life. While it works great for some data sets (e.g. sorting years of experience), it doesn’t even take pathological data to make both running time and memory use non-optimal.<p></p>
+There’s a variant of countingSort called radixSort that works a lot better, but even here we run into problems with real world applications
+<p></p>
+To supplement these sorts, I'm happy to introduce primeSort: a technique that functions worse than both of them. Here's how it works:
+<p></p>
+Download a list of primes and parse it into an array. Instantiate a integer with value 1, execute a linear pass through your input array, and each time you get to an element of value n, multiple your integer by n.
+<p></p>
+<script src="https://gist.github.com/schillerk/d41c94726738347879d9.js"></script>
+Now, run through your array of primes, stopping when you get to the index equal to the max value of your original input. Each time your integer is divisible by the prime at any given index, output the index.
+<p></p>
+<script src="https://gist.github.com/schillerk/9eeb46c38ee6086eaae4.js"></script>
+And you’re done!
+<p></p>
+To deal with duplicates, we simply replace the if statement in the code above with a while loop that checks for powers of any given prime.
+<p></p>
+<script src="https://gist.github.com/schillerk/6ea9d0ac2f354ec50252.js"></script>
+So why does this work? According to the <a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic"><u>Fundamental Theorem of Arithmetic</u></a>, also known as unique prime factorization, every integer can be factored into primes, and this factorization is unique. This means that when we multiple a bunch of primes together, we’ve created a kind of lossless compression. All the data is still there, and we have no problem pulling our original primes out again.
+<p></p>
+The real problem here is with the word “compression”. Even though this “only” requires a single variable, multiplying primes by each other means that the variable quickly grows to take up far more memory than the array used in countingSort.
+<p></p>
+Still, this is a neat application of the FTA, and could be a great way to surprise your examiner (or maybe just display your sense of humor) at your next coding interview.
+<p></p>
+Full program can be found <a href="https://gist.github.com/schillerk/6fc8f5969481b5826424"><u>here</u></a>.
             </div>
             <a href="#contact" class="smoothScroll"><div id="toTop24">^</div></a>
           </div>
