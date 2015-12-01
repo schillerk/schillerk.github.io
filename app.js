@@ -112,36 +112,20 @@ $(document).ready(function(){
 
     });
 
-	$("#div1").hide();
-	$("#div2").hide();
-    $("#div3").hide();
-    $("#div4").hide();
-    $("#div5").hide();
-    $("#div11").hide();
-    $("#div12").hide();
-    $("#div13").hide();
-    $("#div21").hide();
-    $("#div31").hide();
-    $("#div32").hide();
-    $("#div33").hide();
     $("#parent").hide();
     $("#parent2").hide();
-    $("#toTop11").click(function(){
+    $("#toTop").click(function(){
         $("#div11").hide();
-    });
-    $("#toTop12").click(function(){
         $("#div12").hide();
-    });
-    $("#toTop13").click(function(){
         $("#div13").hide();
-    });
-    $("#toTop21").click(function(){
+        $("#div14").hide();
         $("#div21").hide();
-    });
-    $("#toTop31").click(function(){
+        $("#div22").hide();
+        $("#div23").hide();
+        $("#div24").hide();
+        $("#div25").hide();
+        $("#div26").hide();
         $("#div31").hide();
-    });
-    $("#toTop32").click(function(){
         $("#div32").hide();
     });
     $("#toTop33").click(function(){
@@ -282,6 +266,7 @@ $(document).ready(function(){
         $("#div23").hide();
         $("#div24").hide();
         $("#div25").hide();
+        $("#div26").hide();
     });
     $("#Button22").click(function(){
         $("#parent2").show();
@@ -290,6 +275,7 @@ $(document).ready(function(){
         $("#div23").hide();
         $("#div24").hide();
         $("#div25").hide();
+        $("#div26").hide();
     });
     $("#Button23").click(function(){
         $("#parent2").show();
@@ -298,6 +284,7 @@ $(document).ready(function(){
         $("#div22").hide();
         $("#div24").hide();
         $("#div25").hide();
+        $("#div26").hide();
     });
     $("#Button24").click(function(){
         $("#parent2").show();
@@ -306,6 +293,7 @@ $(document).ready(function(){
         $("#div22").hide();
         $("#div23").hide();
         $("#div25").hide();
+        $("#div26").hide();
     });
     $("#Button25").click(function(){
         $("#parent2").show();
@@ -314,6 +302,16 @@ $(document).ready(function(){
         $("#div22").hide();
         $("#div23").hide();
         $("#div24").hide();
+        $("#div26").hide();
+    });
+    $("#Button26").click(function(){
+        $("#parent2").show();
+        $("#div26").show();
+        $("#div21").hide();
+        $("#div22").hide();
+        $("#div23").hide();
+        $("#div24").hide();
+        $("#div25").hide();
     });
     $("#Button31").click(function(){
         $("#parent2").show();
