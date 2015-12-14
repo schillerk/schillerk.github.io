@@ -114,7 +114,7 @@ $(document).ready(function(){
 
     $("#parent").hide();
     $("#parent2").hide();
-    $("#toTop").click(function(){
+    $(".toTop").click(function(){
         $("#div11").hide();
         $("#div12").hide();
         $("#div13").hide();

@@ -107,14 +107,14 @@ a:link, a:visited, a:hover, a:active{
   color: #3B3B3B;
 }
 
-#toTop {
+.toTop {
   font-family: 'Cinzel Decorative';
   font-weight: 900;
   font-size: 40pt;
   color: #3B3B3B;
 }
 
-#toTop:hover {
+.toTop:hover {
   color: #999999;
 }
 
