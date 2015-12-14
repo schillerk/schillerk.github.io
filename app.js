@@ -147,6 +147,7 @@ $(document).ready(function(){
         $("#div23").hide();
         $("#div24").hide();
         $("#div25").hide();
+        $("#div26").hide();
         $("#div31").hide();
         $("#div32").hide();
         $("#div33").hide();
@@ -167,6 +168,7 @@ $(document).ready(function(){
         $("#div23").hide();
         $("#div24").hide();
         $("#div25").hide();
+        $("#div26").hide();
         $("#div31").hide();
         $("#div32").hide();
         $("#div33").hide();
@@ -187,6 +189,7 @@ $(document).ready(function(){
         $("#div23").hide();
         $("#div24").hide();
         $("#div25").hide();
+        $("#div26").hide();
         $("#div31").hide();
         $("#div32").hide();
         $("#div33").hide();
@@ -207,6 +210,7 @@ $(document).ready(function(){
         $("#div23").hide();
         $("#div24").hide();
         $("#div25").hide();
+        $("#div26").hide();
         $("#div31").hide();
         $("#div32").hide();
         $("#div33").hide();
@@ -227,6 +231,7 @@ $(document).ready(function(){
         $("#div23").hide();
         $("#div24").hide();
         $("#div25").hide();
+        $("#div26").hide();
         $("#div31").hide();
         $("#div32").hide();
         $("#div33").hide();
