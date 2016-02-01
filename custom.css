@@ -183,10 +183,11 @@ a:link, a:visited, a:hover, a:active{
 
 #description {
     font-family: 'Open Sans Condensed';
-    font-size: 14pt;
+    font-size: 18pt;
     color: #666666;
     margin-top: -20px;
-    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 4px;
 }
 
 .column {
