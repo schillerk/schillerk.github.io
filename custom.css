@@ -151,10 +151,9 @@ a:link, a:visited, a:hover, a:active{
 .challenge {
     font-family: 'Open Sans Condensed';
     font-weight: 300;
-    font-size: 12pt;
+    font-size: 14pt;
     color: #3B3B3B;
-    letter-spacing: 1px;
-    width: 500px;
+    width: 600px;
     word-wrap: break-word;
     margin-left: auto;
     margin-right: auto;
