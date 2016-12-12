@@ -9,7 +9,6 @@ $(document).ready(function(){
     $("#p5").hide();
     $("#p6").hide();
     $("#p7").hide();
-    $("#p8").hide();
     $("#rightarrow").click(function(){
         if(count == 1)
         {
@@ -47,15 +46,9 @@ $(document).ready(function(){
             $("#p7").fadeIn();
             count++;
         }
-        else if (count == 7)
-        {
-            $("#p7").fadeOut();
-            $("#p8").fadeIn();
-            count++;
-        }
         else if (count == 8)
         {
-            $("#p8").fadeOut();
+            $("#p7").fadeOut();
             $("#p1").fadeIn();
             count = 1;
         }
@@ -64,7 +57,7 @@ $(document).ready(function(){
         if(count == 1)
         {
             $("#p1").fadeOut();
-            $("#p8").fadeIn();
+            $("#p7").fadeIn();
             count = 8;
         }
         else if (count == 2)
@@ -103,13 +96,6 @@ $(document).ready(function(){
             $("#p6").fadeIn();
             count--;
         }
-        else if (count == 8)
-        {
-            $("#p8").fadeOut();
-            $("#p7").fadeIn();
-            count--;
-        }
-
     });
 
     $("#parent").hide();
@@ -127,8 +113,6 @@ $(document).ready(function(){
         $("#div26").hide();
         $("#div31").hide();
         $("#div32").hide();
-    });
-    $("#toTop33").click(function(){
         $("#div33").hide();
     });
     $("#Button1").click(function(){
