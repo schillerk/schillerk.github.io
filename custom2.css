@@ -1,18 +1,43 @@
-.next-button-inner-test {
-  position: relative;
-  top: 7px;
-  left: 35px;
+#gradient-test {
+  background-image: linear-gradient(to right, rgb(91, 37, 90), rgb(29, 120, 118), rgb(123, 122, 44) 100%);
+  width: 214px;
+  height: 54px;
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  border-radius: 3px;
 }
 
-.next-button-test:hover {
+.next-button-inner-text-test {
+  position: relative;
+  width: 150px;
+  top: 7px;
+  left: 36px;
+}
+
+.next-button-test:hover #next-button-inner-test {
+  background: transparent;
+  color: white;
+  border: 3px solid white;
+}
+
+#next-button-inner-test {
+  border-color: transparent;
+  border: 3px solid transparent;
+  position: absolute;
   background: white;
   color: black;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  transition: .4s;
 }
-
 
 .next-button-test {
   font-family: 'Coda', sans-serif;
-  color: white;
   font-size: 20px;
   text-align: left;
   width: 200px;
@@ -21,7 +46,6 @@
   letter-spacing: 1px;
   bottom: 60px;
   right: 100px;
-  border: 1px solid white;
   border-radius: 3px;
   -webkit-transition: .4s; /* Safari */
   transition: .4s;
@@ -105,10 +129,10 @@
   width: 100%;
   color: white;
   z-index: 12;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 5px;
+  font-weight: 300;
+  /*letter-spacing: 5px;*/
   text-align: right;
   display: inline-block;
   cursor: pointer;
@@ -125,6 +149,7 @@
   cursor: pointer;
   -webkit-transition: .4s; /* Safari */
   transition: .4s;
+  color: #CCC;
 }
 
 .title-menu-test:after {
@@ -133,20 +158,19 @@
   width: 0;
   margin: auto;
   position: relative;
-  left: -11px;
   padding-bottom: 7px;
   border-bottom: 2px solid transparent;
-  transition: width .3s cubic-bezier(0,.35,.65,1) !important;
+  transition: width .2s cubic-bezier(0,.35,.65,1) !important;
 }
 
 .title-menu-test:hover {
-  color: #F5F8FA !important;
-  transition: color .3s cubic-bezier(0,.35,.65,1);
+  color: white;
+  transition: color .2s cubic-bezier(0,.35,.65,1);
 }
 
 .title-menu-test:hover:after{
   border-bottom: 2px solid #F5F8FA;
-  width: calc(100% + 20px);
+  width: 100%;
 }
 
 body {
